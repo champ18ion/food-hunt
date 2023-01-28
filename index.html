@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/mealcard.css" />
+    <script src="./js/index.js" defer></script>
+    <title>Food hunt</title>
+</head>
+
+<body>
+    <!-- Header Section  -->
+    <header>
+        <a href="#nav" id="menu-ico"><iconify-icon icon="fontisto:nav-icon-list-a" width="36" style="color: #5cac0e;"></iconify-icon></a>
+
+        <a href="./index.html" id="m-home-page-link">
+            <div id="logo">
+                <!-- <iconify-icon icon="game-icons:meal" width="48"></iconify-icon>
+                <h1>Meal Finder</h1> -->
+                <img src="./img/Logo section.png" alt="" srcset="">
+            </div>
+        </a>
+        <!-- nav bar  -->
+        <nav id="nav">
+            <a id="close-btn" href="#main"><img src="https://cdn-icons-png.flaticon.com/512/1828/1828778.png" /></a>
+            <a href="./index.html" id="home-page-link">
+                <div id="logo">
+                    <img src="./img/Logo section.png" alt="" srcset="">
+                </div>
+            </a>
+            <!-- menu items -->
+            <ul class="menu">
+                <li><a href="./index.html">  Home</a></li>
+                <li><a href="./favourites.html">  Favorites</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- SEARCH AND MEALS SECTION -->
+    <section id="main">
+        
+        <div id="ellipse">
+            <img src="./img/image 5.png" alt="">
+            <img id="img-2" src="./img/image 1.png" alt="">
+            <img id="img-3" src="./img/image 3.png" alt="">
+        </div>
+        
+        <div id="search-bar">
+            <form action="" class="search-bar">
+                <h1>Search your next meal...😋</h1>
+                <input id="search-value" type="search" name="search" pattern=".*\S.*" placeholder="what you want to eat" required />
+                <button class="search-btn" id="search-btn" type="submit">
+                    <iconify-icon icon="ic:outline-search"></iconify-icon>
+                </button>
+            </form>
+        </div>
+        <div id="meal-cards-container">
+            <ul id="meals-list"></ul>
+        </div>
+
+        <div id="cards-page"></div>
+    </section>
+</body>
+
+</html>

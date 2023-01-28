@@ -1,0 +1,334 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+* {
+  margin: 0;
+  padding: 0
+}
+
+html {
+  scroll-behavior: smooth
+}
+
+body {
+  background-color: #ffffff;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden
+}
+
+header {
+  top: 0;
+  left: 0;
+  z-index: 10;
+  position: fixed;
+  height: 11vh;
+  width: 100%;
+  background-color:#ffffff;
+}
+
+#menu-ico {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  visibility: hidden
+}
+
+#menu-ico img {
+  height: 80%;
+  width: 80%
+}
+
+nav {
+  width: 100%;
+  background-color: rgb(249, 249, 249,);
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+nav ul li{
+width: 66px;
+height: 21px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 21px;
+/* identical to box height */
+
+
+color: #333333;
+}
+
+.m-nav {
+  visibility: visible;
+  position: absolute;
+  height: 100vh;
+  flex-direction: column;
+  width: 50vw;
+  z-index: 10
+}
+
+#home-page-link {
+  display: flex;
+  width: 20%;
+  text-decoration: none
+}
+
+#logo {
+  margin: 0;
+  margin-left:2em;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center
+}
+
+#ellipse{
+position: relative;
+width: 1276px;
+height: 900px;
+left: 275px;
+top: -500px;
+margin-bottom: -550px;
+background: #7BF009;
+opacity: 0.6;
+border-radius: 50%;
+}
+#ellipse img{
+  position:absolute;
+  bottom: 0;
+}
+#img-2{
+  position: absolute;
+  bottom: 10px;
+  right: 320px;
+}
+#img-3{
+  position: absolute;
+  right: 650px;
+  height: 150px;
+  top: 788px;
+}
+#logo h1 {
+  font-family: "Secular One", sans-serif;
+  font-size: 1.2rem;
+  margin-left: 10px;
+  color: #000
+}
+
+.menu {
+
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 63px;
+}
+
+.menu li {
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  padding: 0 20px;
+  transition: background-color ease .3s;
+  margin-left: 14px
+}
+
+.menu li:hover {
+  background-color: #BDF884;
+  border-radius: 20px;
+  transition: 0.5s ease-in-out;
+}
+
+.menu li a {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #000
+}
+
+
+#search-bar {
+  margin-top: 12%;
+  position: relative
+}
+
+
+#search-bar ul {
+  z-index: 10;
+  list-style-type: none;
+  margin: 0 !important;
+  top: 72px;
+  left: 31.5%;
+  position: absolute;
+  width: 430px;
+  background-color: #fff
+}
+
+#search-bar li {
+  padding-left: 2%;
+  width: 98%;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  height: 50px
+}
+
+#search-bar li:hover {
+  background-color: #322f303b
+}
+
+#search-bar li a {
+  text-decoration: none;
+  color: #322f30
+}
+
+#cards-page {
+  z-index: -10;
+  width: 100vw;
+  height: 7vh;
+  top: 117vh;
+  position: absolute
+}
+
+#meals-list {
+  justify-content: center;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap
+}
+
+#m-home-page-link {
+  visibility: hidden;
+  position: absolute
+}
+
+#close-btn {
+  visibility: hidden;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  top: 70%;
+  left: 47%
+}
+
+#close-btn img {
+  height: 100%;
+  width: 100%
+}
+
+@media only screen and (max-width:900px) and (min-width:300px) {
+  .menu li a:hover {
+    background-color: #cecccc
+  }
+
+  .menu li a {
+    padding: 10px 40px
+  }
+
+  .menu li:hover {
+    background-color: transparent;
+    border: none
+  }
+
+  #close-btn {
+    visibility: inherit
+  }
+
+  #close-btn:focus~#nav {
+    visibility: hidden
+  }
+
+  header {
+    z-index: 10;
+    height: 11vh;
+    background-color: #ffffff;
+  }
+
+  #logo {
+    margin-top: 15px
+  }
+  #ellipse{
+    visibility: hidden;
+    display: none;
+  }
+
+  #m-home-page-link {
+    text-decoration: none;
+    left: 30%;
+    visibility: visible;
+    position: absolute
+  }
+
+  #menu-ico {
+    visibility: visible
+  }
+
+  body {
+    position: relative
+  }
+
+  nav {
+    position: fixed;
+    visibility: hidden;
+    position: absolute;
+    height: 100vh;
+    flex-direction: column;
+    width: 60vw;
+    z-index: 10;
+    background-color:white;
+  }
+
+  #home-page-link {
+    visibility: hidden;
+    position: absolute
+  }
+
+  #nav:target {
+    visibility: visible
+  }
+
+  .menu {
+    height: 50%;
+    flex-direction: column;
+    margin-top: 10%;
+    width: 100%
+  }
+
+  .menu li {
+    padding: 0;
+    text-align: left;
+    margin-left: 0;
+    margin-top: 20px;
+    width: 100%
+  }
+
+  #main {
+    background-color: #c0e6fb42
+  }
+
+
+
+  #search-bar {
+    margin-top: 25%
+  }
+
+
+  #welcome-page {
+    position: absolute;
+    visibility: hidden
+  }
+
+  #search-bar ul {
+    left: 6%
+  }
+}
